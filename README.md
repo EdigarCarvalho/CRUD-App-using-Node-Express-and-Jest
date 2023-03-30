@@ -1,6 +1,7 @@
 # Express: CRUD de usuário + permissão de administrador
 
 We did this as a challenge assigned to our team to further advance our knowledge on the stack we've been using on our project. This app basically runs through a few tests that our squad leader made with Jest, simulating real requisitions that a backend server could listen to, and it was our job to implement all functions and methods accordingly.
+
 Even if limited to a mock-up simulation, it currently creates a new account under request, logs in, modifies the user data, and deletes their account, all while verifying if the user has the appropriate permission for what they want to do, or if they sent a valid token.
 
 
