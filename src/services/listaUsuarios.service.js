@@ -1,10 +1,12 @@
 import users from './../database'
 
-function listaUsuariosService() {
-    const list = users.map(el => { 
-        return { ...el, password: undefined }
- })
+function listaUsuariosService(sendPassword) {
+ 
+    const list = users.map(el => {
+        return sendPassword ? { ...el } : { ...el, password: undefined }})
+
     return list;
+    
 }
 
 export default listaUsuariosService;

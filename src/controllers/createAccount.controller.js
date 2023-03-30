@@ -1,7 +1,7 @@
 import addToDatabaseService from '../services/addToDatabase.service'
 import criarUsuarioService from '../services/criarUsuario.service';
 
-async function verifyEmailController(req, res) {
+async function createAccountController(req, res) {
     const data = await criarUsuarioService(req.body);
     addToDatabaseService(data);
 
@@ -9,4 +9,4 @@ async function verifyEmailController(req, res) {
 
 }
 
-export default verifyEmailController;
+export default createAccountController;

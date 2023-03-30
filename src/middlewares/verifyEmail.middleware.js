@@ -10,7 +10,6 @@ function verifyEmailMiddleware(req, res, next) {
     const usuarios = listaUsuariosService().map(el => {return el.email});
     const email = req.body.email;
     
-    
     if (usuarios.includes(email)) return res.status(409).json({ message: "There's already an account with this email :(" });
     
     next();
